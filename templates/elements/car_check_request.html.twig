@@ -1,0 +1,23 @@
+<section class="car-check__request">
+    <div class="container">
+        <h2>Записаться на проверку</h2>
+        <p class="car-check__request_description">Заполните данные для записи</p>
+        <form class="car-check__request_form">
+            <div class="three-field__line">
+                <input type="tel" name="phone" required placeholder="Телефона для связи ( обязательное поле )">
+                <input type="text" name="model" placeholder="Модель Вашего авто">
+                <select name="is_work_car">
+                    <option disabled selected class="option_title">Автомобиль на ходу ?</option>
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                </select>
+            </div>
+            <div class="one-field__textarea">
+                <textarea name="problem" placeholder="Опишите свою проблему"></textarea>
+            </div>
+            <div class="request-form__btn">
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+</section>

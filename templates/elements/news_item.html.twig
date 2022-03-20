@@ -1,0 +1,41 @@
+<section class="news">
+    <div class="container">
+        <div class="news__header row">
+            <div class="col-lg-6 col-md-12">
+                {% if newsItem.h1 is not empty %}
+                    <h2>{{ newsItem.h1 }}</h2>
+                {% endif %}
+                {% if newsItem.shortText is not empty %}
+                <div class="news__header_short">
+                    {{ newsItem.shortText|raw }}
+                </div>
+                {% endif %}
+
+            </div>
+            <div class="col-lg-6 col-md-12">
+                {% if newsItem.image is not empty %}
+                    <div class="news__header_image">
+                        <img src="/images/news/{{ newsItem.alias }}/{{ newsItem.image }}" alt="#">
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="news__body row">
+            <div class="col-12">
+                {% if newsItem.content is not empty %}
+                <div class="news__body_content">
+                    {{ newsItem.content|raw }}
+                </div>
+                {% endif %}
+                {% if gallery is not empty %}
+                <div class="news__body_gallery">
+                    {% for image in gallery%}
+                    <img src="{{ image }}" alt="">
+
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
