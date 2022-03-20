@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Страница не найдена{% endblock %}
+
+{% block body %}
+    {% block header%}{{ include('elements/header_news.html.twig') }}{% endblock%}
+    <section class="error-404">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <span>404</span>
+                    <p>Нам жаль, но запрашиваемая страница не найдена...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ include('popup/popup_form.html.twig') }}
+    {% block map %}{{ include('elements/map.html.twig') }}{% endblock %}
+    {% block footer %}{{ include('elements/footer.html.twig') }}{% endblock %}
+
+{% endblock %}
