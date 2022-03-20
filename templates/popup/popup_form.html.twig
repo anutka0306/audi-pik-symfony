@@ -59,6 +59,7 @@
                     //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
                     $.magnificPopup.close();
                     console.log(response);
+                    window.location.replace("/confirm");
                 },
                 error: function (response) { // Данные не отправлены
                     console.log('error');

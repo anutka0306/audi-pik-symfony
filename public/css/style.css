@@ -1366,3 +1366,34 @@ footer.footer .header__audi-partners{
     border-radius: 10px;
     object-fit: cover;
 }
+
+/* Confirm */
+.confirm{
+    margin-top: 50px;
+}
+.confirm h2, .confirm h3{
+    text-align: center;
+    font-family: "Gilroy Bold", sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.confirm__text p{
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.confirm__steps_item span{
+    display: block;
+    color: #EE3428;
+    font-family: "Gilroy Bold", sans-serif;
+    font-size: 96px;
+    margin-bottom: 20px;
+}
+.confirm__steps_item p{
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}

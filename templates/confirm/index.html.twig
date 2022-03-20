@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ваша заявка отправлена{% endblock %}
+
+{% block body %}
+    {% block header%}{{ include('elements/header_news.html.twig') }}{% endblock%}
+    {{ include('elements/confirm.html.twig') }}
+    {{ include('elements/offers.html.twig') }}
+    {{ include('elements/reviews.html.twig') }}
+    {% block footer %}{{ include('elements/footer.html.twig') }}{% endblock %}
+{% endblock %}

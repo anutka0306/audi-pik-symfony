@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello NewsController!{% endblock %}
+{% block title %}{{ newsItem.h1 }}{% endblock %}
 
 {% block body %}
     {% block header%}{{ include('elements/header_news.html.twig') }}{% endblock%}
