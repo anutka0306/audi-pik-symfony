@@ -1,47 +1,51 @@
-<section class="blog">
-    <div class="container">
-        <h2>Полезный блог</h2>
-        <div class="blog__container">
-            <div class="blog__item">
-                <div class="blog__item_img">
-                    <img src="/images/blog/blog1.png" alt="">
+{% if news is not empty %}
+    <section class="blog">
+        <div class="container">
+            <h2>Полезный блог</h2>
+            <div class="blog__container">
+                {% for newsItem in news %}
+                    <div class="blog__item">
+                    <div class="blog__item_img">
+                        <img src="/images/news/{{ newsItem.alias }}/image.jpg" alt="">
+                    </div>
+                    <span class="blog__item_name">{{ newsItem.h1 }}</span>
+                    <div class="blog__item_short-text">
+                        {{ newsItem.shortText|raw }}
+                    </div>
+                    <a href="/news/{{ newsItem.alias }}" class="blog__item_link">Читать подробнее</a>
                 </div>
-                <span class="blog__item_name">Название новости</span>
-                <div class="blog__item_short-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua. orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.</p>
+                {% endfor %}
+                {#<div class="blog__item">
+                    <div class="blog__item_img">
+                        <img src="/images/blog/blog2.png" alt="">
+                    </div>
+                    <span class="blog__item_name">Название новости</span>
+                    <div class="blog__item_short-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.
+                    </div>
+                    <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
                 </div>
-                <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
-            </div>
-            <div class="blog__item">
-                <div class="blog__item_img">
-                    <img src="/images/blog/blog2.png" alt="">
+                <div class="blog__item">
+                    <div class="blog__item_img">
+                        <img src="/images/blog/blog3.png" alt="">
+                    </div>
+                    <span class="blog__item_name">Название новости</span>
+                    <div class="blog__item_short-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.
+                    </div>
+                    <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
                 </div>
-                <span class="blog__item_name">Название новости</span>
-                <div class="blog__item_short-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.
-                </div>
-                <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
-            </div>
-            <div class="blog__item">
-                <div class="blog__item_img">
-                    <img src="/images/blog/blog3.png" alt="">
-                </div>
-                <span class="blog__item_name">Название новости</span>
-                <div class="blog__item_short-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.
-                </div>
-                <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
-            </div>
-            <div class="blog__item">
-                <div class="blog__item_img">
-                    <img src="/images/blog/blog4.png" alt="">
-                </div>
-                <span class="blog__item_name">Название новости</span>
-                <div class="blog__item_short-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.
-                </div>
-                <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
+                <div class="blog__item">
+                    <div class="blog__item_img">
+                        <img src="/images/blog/blog4.png" alt="">
+                    </div>
+                    <span class="blog__item_name">Название новости</span>
+                    <div class="blog__item_short-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolorem gna aliqua.
+                    </div>
+                    <a href="/news/news1" class="blog__item_link">Читать подробнее</a>
+                </div>#}
             </div>
         </div>
-    </div>
-</section>
+    </section>
+{% endif %}

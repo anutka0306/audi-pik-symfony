@@ -39,10 +39,12 @@ class NewsController extends AbstractController
         }
         $folderName = '/images/news/'.$newsItem->getAlias().'/gallery/';
         $gallery = $this->getGalleryImgs($folderName);
+        $news = $this->newsRepository->findAll();
 
         return $this->render('news/item.html.twig',[
             'newsItem' => $newsItem,
             'gallery' => $gallery,
+            'news' => $news,
         ]);
     }
 
