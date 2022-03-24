@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}{{ newsItem.h1 }}{% endblock %}
+{% block description %}{{ newsItem.h1 }} - Профильный Автосервис Ауди в Москве по адресу ул. Ибрагимова вл. 31А. Ремонт, ТО. {% endblock %}
 
 {% block body %}
     {% block header%}{{ include('elements/header_news.html.twig') }}{% endblock%}
