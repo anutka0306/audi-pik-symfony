@@ -528,12 +528,13 @@ header::after{
 .our-works__slider_content .slick-list{
     max-height: 300px;
 }
-.our-works__slider_content_title{
+.our-works__slider_content_title, .our-works__slider_content_title a{
     display: block;
     font-family: "Gilroy Bold", sans-serif;
     font-size: 30px;
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 .our-works__slider_content_subtitle{
     display: block;
@@ -1179,7 +1180,8 @@ header::after{
 }
 .map__address{
     width: 338px;
-    height: 434px;
+   /* height: 434px;*/
+    height: 250px;
     position: absolute;
     top: 45px;
     left: 15%;

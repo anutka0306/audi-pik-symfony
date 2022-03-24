@@ -1,4 +1,5 @@
-<section class="our-works">
+{% if news is not empty %}
+    <section class="our-works">
     <h2>Примеры работ</h2>
     <div class="container">
         <div class="row">
@@ -7,32 +8,22 @@
                     <img src="/images/our-works/work1.jpg" alt="">
                 </div>
             </div>
+
             <div class="col-lg-6 col-md-12 our-works__text">
                 <div class="our-works__slider_content">
-                    <div>
+                    {% for newsItem in news %}
+                        <div>
                         <span class="our-works__slider_content_title">
-                            Audi A6
+                            <a href="/news/{{ newsItem.alias }}"> {{ newsItem.h1 }}</a>
                         </span>
                         <span class="our-works__slider_content_subtitle">
                             Что было сделано:
                         </span>
                         <div class="our-works__slider_content_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {{ newsItem.shortText|raw }}
                         </div>
                     </div>
-
-
-                    <div>
-                        <span class="our-works__slider_content_title">
-                            Audi A1
-                        </span>
-                        <span class="our-works__slider_content_subtitle">
-                            Что было сделано:
-                        </span>
-                        <div class="our-works__slider_content_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                    </div>
+                    {% endfor %}
 
                 </div>
 
@@ -44,6 +35,8 @@
                 </div>
 
             </div>
+
         </div>
     </div>
 </section>
+{% endif %}
