@@ -5,14 +5,14 @@
         <div class="row">
             <div class="col-lg-6 our-works__image">
                 <div class="our-works__slider_img">
-                    <img src="/images/our-works/work1.jpg" alt="">
+                    <img src="/images/news/{{ news[0].alias }}/image.jpg" alt="">
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12 our-works__text">
                 <div class="our-works__slider_content">
                     {% for newsItem in news %}
-                        <div>
+                        <div data-image="{{ newsItem.alias }}/{{ newsItem.image }}">
                         <span class="our-works__slider_content_title">
                             <a href="/news/{{ newsItem.alias }}"> {{ newsItem.h1 }}</a>
                         </span>

@@ -524,6 +524,13 @@ header::after{
     align-items: flex-end;
     position: relative;
 }
+.our-works__slider_img img{
+    width: 515px;
+    height: 515px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
 .our-works__slider_content{
     height: 515px;
     width: 100%;

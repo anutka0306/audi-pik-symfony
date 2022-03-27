@@ -52,9 +52,9 @@
     .our-works__consult span{
         margin-bottom: 10px;
     }
-    .about__video iframe{
+    .about__video iframe, .about__video video{
         width: 425px;
-        height: 100%;
+        height: auto;
     }
     .offers__item{
         width: 450px;
@@ -129,9 +129,9 @@
         justify-content: center;
         margin-top: 50px;
     }
-    .about__video iframe{
+    .about__video iframe, .about__video video{
         position: relative;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
     .team__wrapper{

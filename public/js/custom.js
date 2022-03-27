@@ -19,6 +19,11 @@ $(document).ready(function (){
        dots: false,
        arrows: true,
     });
+    $('.our-works__slider_content').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+       let current = $('.our-works__slider_content .slick-slide[data-slick-index ='+nextSlide+']').attr('data-image');
+       $('.our-works__slider_img img').attr('src', '/images/news/'+current);
+        console.log(current);
+    });
 
     $(".all-reviews").slick({
         infinite: true,
