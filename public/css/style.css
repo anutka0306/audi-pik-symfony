@@ -913,11 +913,12 @@ header::after{
 }
 .reviews__slider_item_name span:nth-child(1){
     font-family: "Gilroy Bold", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
+    word-break: break-word;
 }
 .reviews__slider_item_name span:nth-child(2){
     font-family: Gilroy, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 .reviews__slider_item_rating{
     display: flex;
@@ -934,7 +935,7 @@ header::after{
 }
 .reviews__slider_item_rate{
     font-family: Gilroy, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
 }
 .reviews__slider_item_body{
     margin-top: 28px;
@@ -942,11 +943,14 @@ header::after{
 }
 .reviews__slider_item_body p{
     font-family: Gilroy, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+    max-height: 160px;
+    overflow-y: hidden;
+    padding-bottom: 5px;
 }
 .reviews__slider_item_link a{
     font-family: Gilroy, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     color: #EE3428;
 }
 .reviews__links .slick-prev{
@@ -1108,7 +1112,7 @@ header::after{
 }
 .faq-accordion .accordion-body{
     font-family: Gilroy, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* Blog */
@@ -1198,7 +1202,7 @@ header::after{
 }
 .map__address_name{
     font-family: "Gilroy Bold", sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     color: #000000;
     margin-bottom: 10px;
     display: block;
@@ -1212,12 +1216,12 @@ header::after{
 .map__address_address_text span{
     display: block;
     font-family: Gilroy, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 .map__address_address_text a{
     display: block;
     font-family: Gilroy, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     color: #EE3428;
 }
 .map__address_phone{
@@ -1226,7 +1230,7 @@ header::after{
 }
 .map__address_phone_text a{
     font-family: Gilroy, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
     cursor: pointer;
     color: #000000;
@@ -1235,7 +1239,7 @@ header::after{
     margin-bottom: 0;
     color: #26D42D;
     font-family: Gilroy, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     align-items: center;
 }
@@ -1250,7 +1254,7 @@ header::after{
 }
 .map__callback_btn {
     border: 1px solid #EE3428;
-    width: 177px;
+    width: 185px;
     height: 35px;
     border-radius: 90px;
     text-decoration: none;
@@ -1259,7 +1263,7 @@ header::after{
     align-items: center;
     color: #000000;
     font-family: Gilroy, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 10px;
 }
 .map__callback_btn:hover{
