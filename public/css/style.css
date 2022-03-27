@@ -422,6 +422,9 @@ header::after{
 .photo-service__slick1 .slick-dots li.slick-active button:before, .photo-service__slick2 .slick-dots li.slick-active button:before{
     color: #EE3428;
 }
+.photo-service__slick1 img.slick-slide{
+    height: 424px !important;
+}
 .photo-service__slider_title{
     text-align: center;
     color: #09091C;
