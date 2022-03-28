@@ -28,4 +28,16 @@ class HomeController extends AbstractController
             'news' => $news,
         ]);
     }
+
+    /**
+     * @Route("/v2", name="app_home_alternative")
+     */
+    public function alternative(): Response
+    {
+        $news = $this->newsRepository->findAll();
+        return $this->render('home/alternative.html.twig', [
+            'news' => $news,
+        ]);
+
+    }
 }

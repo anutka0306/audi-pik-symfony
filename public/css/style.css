@@ -1430,3 +1430,13 @@ footer.footer .header__audi-partners{
     font-family: Gilroy, sans-serif;
     font-size: 16px;
 }
+
+/* Alternative*/
+.banner__right-content.alternative{
+    background: url(../video/our-sklad.mp4);
+    background-size: cover;
+    overflow-y: hidden;
+    filter: brightness(0.3);
+    overflow-x: hidden;
+    max-height: 500px;
+}
