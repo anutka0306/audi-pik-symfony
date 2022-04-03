@@ -221,17 +221,32 @@ header::after{
     display: block;
     margin-right: 24px;
 }
+
+
 .banner__left-content_consult .consult_btn{
-    width: 200px;
-    height: 50px;
+
     border-radius: 91px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: #ffffff;
     text-decoration: none;
     background-color: #EE3428;
+
+    justify-content: center;
+
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding-top: 2px;
+    border: none;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+
 .banner__right-content{
     width: 100%;
     height: 100%;
@@ -273,9 +288,14 @@ header::after{
     font-size: 18px;
 }
 
+/* Quiz */
+.quiz__questions .answer-images .answer-image__img-container_with-img{
+    background-color: #FFFFFF !important;
+}
+
 /* Request Form */
 .car-check__request{
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 100px;
 }
 .car-check__request h2{
@@ -526,10 +546,11 @@ header::after{
 }
 .our-works__slider_img img{
     width: 515px;
-    height: 515px;
+    height: 480px;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 .our-works__slider_content{
     height: 515px;
@@ -1436,7 +1457,64 @@ footer.footer .header__audi-partners{
     background: url(../video/our-sklad.mp4);
     background-size: cover;
     overflow-y: hidden;
-    filter: brightness(0.3);
+   /* filter: brightness(0.3);*/
     overflow-x: hidden;
     max-height: 500px;
+}
+
+/* Buttons Animation*/
+.banner__left-content_consult .consult_btn, .request-form__btn a,  .offers__item_button a, .diagnostic-callback__form_btn-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.diagnostic-callback__form_btn-container{
+    border-radius: 91px;
+}
+.banner__left-content_consult .consult_btn::after, .request-form__btn a::after,  .offers__item_button a::after, .diagnostic-callback__form_btn-container::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 300px;
+    margin-left: 60px;
+    background: #fff;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes slideme {
+    0% { left: -30px; margin-left: 0px; }
+    30% { left: 110%; margin-left: 80px; }
+    100% { left: 110%; margin-left: 80px; }
 }
