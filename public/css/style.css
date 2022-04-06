@@ -295,8 +295,8 @@ header::after{
 
 /* Request Form */
 .car-check__request{
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .car-check__request h2{
     text-align: center;
@@ -377,8 +377,8 @@ header::after{
 
 /* Make often Block*/
 .make-often{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-image: url(../images/make-often-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,8 +421,8 @@ header::after{
 
 /* Photo of Service Block*/
 .photo-service{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #FFFFFF;
 }
 .photo-service h2{
@@ -442,7 +442,7 @@ header::after{
 .photo-service__slick1 .slick-dots li.slick-active button:before, .photo-service__slick2 .slick-dots li.slick-active button:before{
     color: #EE3428;
 }
-.photo-service__slick1 img.slick-slide{
+.photo-service__slick1 img.slick-slide, .photo-service__slick2 img.slick-slide{
     height: 424px !important;
 }
 .photo-service__slider_title{
@@ -455,7 +455,7 @@ header::after{
 
 /* Video Block*/
 .our-video{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: #FFFFFF;
 }
 .our-video h2{
@@ -473,7 +473,7 @@ header::after{
 
 /* Services */
 .services{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: #FFFFFF;
 }
 .services h2{
@@ -580,6 +580,9 @@ header::after{
     color: #FFFFFF;
     line-height: 1.7;
 }
+.our-works__slider_image_mobile{
+    display: none;
+}
 .our-works__slider_content .slick-prev{
     left: 0;
 }
@@ -648,7 +651,7 @@ header::after{
 
 /* About */
 .about{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .about h2{
     font-family: "Gilroy Bold", sans-serif;
@@ -679,7 +682,7 @@ header::after{
 
 /* Numbers*/
 .numbers{
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .numbers h2{
     font-family: "Gilroy Bold", sans-serif;
@@ -726,7 +729,7 @@ header::after{
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    margin-top: 90px;
+    margin-top: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -792,7 +795,7 @@ header::after{
 
 /* Team */
 .team{
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .team h2{
     font-family: "Gilroy Bold", sans-serif;
@@ -831,7 +834,7 @@ header::after{
 
 /* Reviews */
 .reviews{
-    margin-top: 90px;
+    margin-top: 50px;
     background-image: url(../images/reviews_bg.png);
     background-color: #09091C;
     opacity: 1;
@@ -1021,7 +1024,7 @@ header::after{
 
 /* Offers */
 .offers{
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .offers h2{
     text-align: center;
@@ -1087,7 +1090,7 @@ header::after{
 
 /* Certificates */
 .certificates{
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .certificates h2{
     font-family: "Gilroy Bold", sans-serif;
@@ -1116,7 +1119,7 @@ header::after{
 
 /* FAQ */
 .faq{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .faq h2{
     text-align: center;
@@ -1145,7 +1148,7 @@ header::after{
 
 /* Blog */
 .blog{
-    margin-top: 184px;
+    margin-top: 60px;
 }
 .blog h2{
     text-align: center;
@@ -1210,7 +1213,7 @@ header::after{
 }
 /* Map */
 .map{
-    margin-top: 100px;
+    margin-top: 30px;
     position: relative;
 }
 .map__address{

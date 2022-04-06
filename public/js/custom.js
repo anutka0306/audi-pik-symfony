@@ -1,5 +1,10 @@
 $(document).ready(function (){
 
+    if(window.innerWidth <= 420){
+        $(window).scroll(function() {
+           $('.top-menu').css('background-color','rgba(0,0,0,.8)');
+        });
+    }
 
    $(".photo-service__slick1") .slick({
        infinite: true,
