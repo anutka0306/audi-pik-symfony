@@ -375,6 +375,7 @@
         box-shadow: none;
         background: #ff6000;
         overflow: hidden;
+        z-index: 1000;
     }
     .bottom-cover a{
         text-align: center;
