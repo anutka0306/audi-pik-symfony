@@ -354,14 +354,57 @@
 }
 
 @media (max-width: 420px) {
-    .top-menu{
+    section {
+        width: 100%;
+        overflow: hidden;
+    }
+    .bottom-cover{
+        display: block;
         position: fixed;
-        margin-left: -24px;
+        width: 98%;
+        right: auto;
+        left: 1%;
+        height: 40px;
+        -webkit-animation: none;
+        animation: none;
+        border: none;
+        padding-top: 2px;
+        border-radius: 8px;
+        bottom: 3px;
+        z-index: 11;
+        box-shadow: none;
+        background: #ff6000;
+        overflow: hidden;
+    }
+    .bottom-cover a{
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .about__video{
+        height: 180px;
+    }
+    .top-menu{
+        height: 100px;
+        position: fixed;
+        left: 0;
+        flex-direction: column;
+        padding-top: 5px;
         background-color: rgba(0,0,0,0);
         z-index: 10000;
     }
+    .header__callback_btn{
+        display: none;
+    }
+    .header__phone_phone{
+        align-items: center;
+    }
     .header__phone_phone .phone_link{
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 800;
     }
     .our-works__slider_img img{
@@ -375,16 +418,17 @@
     }
     .header__logo{
         justify-content: space-evenly;
+        max-width: 200px;
     }
     .header__logo_audi{
-        width: 50px;
-        height: 30px;
+        width: 80px;
+        height: 40px;
     }
     .header__logo_audi img{
-        width: 30px;
+        width: 40px;
     }
     .header__logo > img{
-        width: 30px;
+        width: 40px;
     }
     .team__item:nth-child(3), .team__item:nth-child(4),.team__item:nth-child(5){
         display: none;

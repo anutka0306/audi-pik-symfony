@@ -1466,7 +1466,7 @@ footer.footer .header__audi-partners{
 }
 
 /* Buttons Animation*/
-.banner__left-content_consult .consult_btn, .request-form__btn a,  .offers__item_button a, .diagnostic-callback__form_btn-container{
+.banner__left-content_consult .consult_btn, .request-form__btn a,  .offers__item_button a, .diagnostic-callback__form_btn-container, .bottom-cover{
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: horizontal;
@@ -1486,7 +1486,7 @@ footer.footer .header__audi-partners{
 .diagnostic-callback__form_btn-container{
     border-radius: 91px;
 }
-.banner__left-content_consult .consult_btn::after, .request-form__btn a::after,  .offers__item_button a::after, .diagnostic-callback__form_btn-container::after{
+.banner__left-content_consult .consult_btn::after, .request-form__btn a::after,  .offers__item_button a::after, .diagnostic-callback__form_btn-container::after, .bottom-cover::after{
     content: "";
     display: block;
     width: 20px;
@@ -1520,4 +1520,7 @@ footer.footer .header__audi-partners{
     0% { left: -30px; margin-left: 0px; }
     30% { left: 110%; margin-left: 80px; }
     100% { left: 110%; margin-left: 80px; }
+}
+.bottom-cover{
+    display: none;
 }
