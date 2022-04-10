@@ -396,7 +396,7 @@
         flex-direction: column;
         padding-top: 5px;
         background-color: rgba(0,0,0,0);
-        z-index: 10000;
+        z-index: 1001;
     }
     .header__callback_btn{
         display: none;
@@ -440,7 +440,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .header__phone_icon{
         display: none;
     }
