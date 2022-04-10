@@ -4,7 +4,7 @@ body{
 }
 header{
     position: relative;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/banner-bg.webp);
     height: 708px;
     background-color: #09091C;
     opacity: 1;
@@ -379,7 +379,7 @@ header::after{
 .make-often{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url(../images/make-often-bg.png);
+    background-image: url(../images/make-often-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -516,7 +516,7 @@ header::after{
 /* Our Works */
 .our-works{
     position: relative;
-    background-image: url(../images/our-works_bg.png);
+    background-image: url(../images/our-works_bg.webp);
     height: 650px;
     opacity: 1;
     background-size: cover;
